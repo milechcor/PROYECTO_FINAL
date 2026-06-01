@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Simulador Integral de Crisis Económica</title>
+
+<meta name="description"
+    content="Proyecto Final de Programación Web I - Simulador Integral de Crisis Económica">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="estilos.css">
+
+
+</head>
+
+<body>
+
+```
+<!-- ========================= -->
+<!-- NAVBAR -->
+<!-- ========================= -->
+
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand logo" href="#inicio">
+
+                <i class="bi bi-bar-chart-line-fill"></i>
+                CrisisSim
+
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse"
+                id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contexto">
+                            Contexto
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#simuladores">
+                            Simuladores
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#casos">
+                            Casos de Estudio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conclusiones">
+                            Conclusiones
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#creditos">
+                            Créditos
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
+<section id="inicio" class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- TEXTO -->
+
+            <div class="col-lg-7">
+
+                <span class="badge-proyecto">
+
+                    Proyecto Final · Programación Web I
+
+                </span>
+
+                <h1 class="hero-title">
+
+                    Simulador Integral de
+                    Crisis Económica
+
+                </h1>
+
+                <p class="hero-description">
+
+                    Plataforma interactiva desarrollada para analizar
+                    situaciones relacionadas con abastecimiento de
+                    carburantes, incremento de precios, transporte,
+                    consumo familiar, rumores de escasez y pérdida
+                    del poder adquisitivo.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#simuladores"
+                        class="btn btn-principal">
+
+                        <i class="bi bi-play-circle-fill"></i>
+                        Comenzar Simulación
+
+                    </a>
+
+                    <a href="#casos"
+                        class="btn btn-secundario">
+
+                        <i class="bi bi-journal-check"></i>
+                        Casos de Estudio
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- TARJETA -->
+
+            <div class="col-lg-5">
+
+                <div class="hero-card">
+
+                    <h3>
+
+                        <i class="bi bi-graph-up-arrow"></i>
+                        Resumen del Proyecto
+
+                    </h3>
+
+                    <div class="info-item">
+
+                        <i class="bi bi-cpu-fill"></i>
+
+                        <div>
+
+                            <strong>6 Simuladores</strong>
+
+                            <p>
+                                Escenarios interactivos
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <i class="bi bi-file-earmark-check-fill"></i>
+
+                        <div>
+
+                            <strong>5 Casos de Estudio</strong>
+
+                            <p>
+                                Ejemplos para pruebas
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <i class="bi bi-phone-fill"></i>
+
+                        <div>
+
+                            <strong>100% Responsivo</strong>
+
+                            <p>
+                                Compatible con móviles y PC
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="info-item">
+
+                        <i class="bi bi-patch-check-fill"></i>
+
+                        <div>
+
+                            <strong>Resultados Dinámicos</strong>
+
+                            <p>
+                                JavaScript + DOM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CONTEXTO -->
+<!-- ========================= -->
+
+<section id="contexto" class="section-spacing">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+                Contexto
+            </span>
+
+            <h2>
+                Problemáticas Analizadas
+            </h2>
+
+            <p>
+
+                El simulador representa situaciones que afectan
+                directamente a las familias y comunidades,
+                permitiendo comprender mejor el impacto económico
+                de diversos factores.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3">
+
+                <article class="context-card">
+
+                    <div class="icon-box carburante">
+
+                        <i class="bi bi-fuel-pump-fill"></i>
+
+                    </div>
+
+                    <h4>
+                        Abastecimiento
+                    </h4>
+
+                    <p>
+
+                        Análisis de reservas de carburantes,
+                        consumo diario y niveles críticos.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+
+                <article class="context-card">
+
+                    <div class="icon-box alimentos">
+
+                        <i class="bi bi-basket2-fill"></i>
+
+                    </div>
+
+                    <h4>
+                        Precios
+                    </h4>
+
+                    <p>
+
+                        Impacto del incremento de precios
+                        sobre el gasto familiar.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+
+                <article class="context-card">
+
+                    <div class="icon-box transporte">
+
+                        <i class="bi bi-bus-front-fill"></i>
+
+                    </div>
+
+                    <h4>
+                        Transporte
+                    </h4>
+
+                    <p>
+
+                        Costos adicionales provocados por
+                        bloqueos y desvíos.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+
+                <article class="context-card">
+
+                    <div class="icon-box economia">
+
+                        <i class="bi bi-cash-stack"></i>
+
+                    </div>
+
+                    <h4>
+                        Economía Familiar
+                    </h4>
+
+                    <p>
+
+                        Evaluación del poder adquisitivo
+                        y capacidad de compra.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+
+<!-- SIMULADORES -->
+
+<!-- ========================= -->
+
+<main id="simuladores" class="section-spacing">
+
+```
+<div class="container">
+
+    <div class="section-header">
+
+        <span class="section-badge">
+            Simuladores
+        </span>
+
+        <h2>
+            Centro de Simulación Económica
+        </h2>
+
+        <p>
+
+            Ingrese los datos requeridos en cada escenario para
+            obtener cálculos, alertas y análisis automáticos.
+
+        </p>
+
+    </div>
+
+    <!-- PESTAÑAS -->
+
+    <ul class="nav nav-pills justify-content-center simulador-tabs mb-5"
+        id="simuladorTabs"
+        role="tablist">
+
+        <li class="nav-item" role="presentation">
+
+            <button class="nav-link active"
+                data-bs-toggle="pill"
+                data-bs-target="#carburantes">
+
+                ⛽ Carburantes
+
+            </button>
+
+        </li>
+
+        <li class="nav-item" role="presentation">
+
+            <button class="nav-link"
+                data-bs-toggle="pill"
+                data-bs-target="#alimentos">
+
+                🛒 Alimentos
+
+            </button>
+
+        </li>
+
+        <li class="nav-item" role="presentation">
+
+            <button class="nav-link"
+                data-bs-toggle="pill"
+                data-bs-target="#transporte">
+
+                🚌 Transporte
+
+            </button>
+
+        </li>
+
+        <li class="nav-item" role="presentation">
+
+            <button class="nav-link"
+                data-bs-toggle="pill"
+                data-bs-target="#compras">
+
+                🛍 Compras
+
+            </button>
+
+        </li>
+
+        <li class="nav-item" role="presentation">
+
+            <button class="nav-link"
+                data-bs-toggle="pill"
+                data-bs-target="#escasez">
+
+                📦 Escasez
+
+            </button>
+
+        </li>
+
+        <li class="nav-item" role="presentation">
+
+            <button class="nav-link"
+                data-bs-toggle="pill"
+                data-bs-target="#poder">
+
+                💰 Poder Adquisitivo
+
+            </button>
+
+        </li>
+
+    </ul>
+
+    <!-- CONTENIDO -->
+
+    <div class="tab-content">
+
+        <!-- ==================== -->
+        <!-- ESCENARIO A -->
+        <!-- ==================== -->
+
+        <div class="tab-pane fade show active"
+            id="carburantes">
+
+            <div class="sim-card">
+
+                <h3>
+                    ⛽ Simulador de Abastecimiento de Carburantes
+                </h3>
+
+                <p>
+
+                    Calcule cuántos días durará una reserva
+                    considerando consumo, reabastecimiento y nivel crítico.
+
+                </p>
+
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Reserva Inicial (Litros)
+                        </label>
+
+                        <input type="number"
+                            id="reservaInicial"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Consumo Diario (Litros)
+                        </label>
+
+                        <input type="number"
+                            id="consumoDiario"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Reabastecimiento Diario
+                        </label>
+
+                        <input type="number"
+                            id="reabastecimientoDiario"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Nivel Crítico
+                        </label>
+
+                        <input type="number"
+                            id="nivelCritico"
+                            class="form-control">
+
+                    </div>
+
+                </div>
+
+                <div class="mt-4">
+
+                    <button class="btn btn-principal"
+                        onclick="calcularCarburante()">
+
+                        Calcular
+
+                    </button>
+
+                    <button class="btn btn-outline-secondary"
+                        onclick="limpiarCarburante()">
+
+                        Limpiar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ==================== -->
+        <!-- ESCENARIO B -->
+        <!-- ==================== -->
+
+        <div class="tab-pane fade"
+            id="alimentos">
+
+            <div class="sim-card">
+
+                <h3>
+                    🛒 Simulador de Precios de Alimentos
+                </h3>
+
+                <p>
+
+                    Analice el incremento de precios y cómo
+                    afecta el gasto mensual de una familia.
+
+                </p>
+
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Producto
+                        </label>
+
+                        <input type="text"
+                            id="producto"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Precio Inicial (Bs)
+                        </label>
+
+                        <input type="number"
+                            id="precioInicial"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Precio Actual (Bs)
+                        </label>
+
+                        <input type="number"
+                            id="precioActual"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Cantidad Semanal
+                        </label>
+
+                        <input type="number"
+                            id="cantidadSemanal"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="col-md-12">
+
+                        <label class="form-label">
+                            Número de Semanas
+                        </label>
+
+                        <input type="number"
+                            id="numeroSemanas"
+                            class="form-control">
+
+                    </div>
+
+                </div>
+
+                <div class="mt-4">
+
+                    <button class="btn btn-principal"
+                        onclick="calcularAlimentos()">
+
+                        Calcular
+
+                    </button>
+
+                    <button class="btn btn-outline-secondary"
+                        onclick="limpiarAlimentos()">
+
+                        Limpiar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ==================== -->
+        <!-- ESCENARIO C -->
+        <!-- ==================== -->
+
+        <div class="tab-pane fade"
+            id="transporte">
+
+            <div class="sim-card">
+
+                <h3>
+                    🚌 Simulador de Costos de Transporte
+                </h3>
+
+                <p>
+
+                    Estime el impacto económico de los desvíos
+                    y rutas más largas.
+
+                </p>
+
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Distancia Normal (Km)
+                        </label>
+
+                        <input type="number"
+                            id="distanciaNormal"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Distancia con Desvío (Km)
+                        </label>
+
+                        <input type="number"
+                            id="distanciaDesvio"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Costo por Kilómetro (Bs)
+                        </label>
+
+                        <input type="number"
+                            id="costoKilometro"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Viajes por Semana
+                        </label>
+
+                        <input type="number"
+                            id="viajesSemana"
+                            class="form-control">
+
+                    </div>
+
+                </div>
+
+                <div class="mt-4">
+
+                    <button class="btn btn-principal"
+                        onclick="calcularTransporte()">
+
+                        Calcular
+
+                    </button>
+
+                    <button class="btn btn-outline-secondary"
+                        onclick="limpiarTransporte()">
+
+                        Limpiar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+```
+        ```
+        <!-- ==================== -->
+        <!-- ESCENARIO D -->
+        <!-- ==================== -->
+
+        <div class="tab-pane fade"
+            id="compras">
+
+            <div class="sim-card">
+
+                <h3>
+                    🛍️ Simulador de Compras Familiares
+                </h3>
+
+                <p>
+
+                    Compare el presupuesto disponible con el
+                    costo total de una compra familiar.
+
+                </p>
+
+                <div class="row g-3">
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Presupuesto Familiar (Bs)
+                        </label>
+
+                        <input type="number"
+                            id="presupuestoFamiliar"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            Costo Total de la Compra (Bs)
+                        </label>
+
+                        <input type="number"
+                            id="costoCompra"
+                            class="form-control">
+
+                    </div>
+
+                </div>
+
+                <div class="mt-4">
+
+                    <button class="btn btn-principal"
+                        onclick="calcularCompras()">
+
+                        Calcular
+
+                    </button>
+
+                    <button class="btn btn-outline-secondary"
+                        onclick="limpiarCompras()">
+
+                        Limpiar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ==================== -->
+        <!-- ESCENARIO E -->
+        <!-- ==================== -->
+
+        <div class="tab-pane fade"
+            id="escasez">
+
+            <div class="sim-card">
+
+                <h3>
+                    📦 Simulador de Rumor de Escasez
+                </h3>
+
+                <p>
+
+                    Analice cómo un aumento repentino de la demanda
+                    puede afectar la disponibilidad de productos.
+
+                </p>
+
+                <div class="row g-3">
+
+                    <div class="col-md-4">
+
+                        <label class="form-label">
+                            Demanda Normal
+                        </label>
+
+                        <input type="number"
+                            id="demandaNormal"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <label class="form-label">
+                            Incremento de Demanda (%)
+                        </label>
+
+                        <input type="number"
+                            id="incrementoDemanda"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <label class="form-label">
+                            Stock Disponible
+                        </label>
+
+                        <input type="number"
+                            id="stockDisponible"
+                            class="form-control">
+
+                    </div>
+
+                </div>
+
+                <div class="mt-4">
+
+                    <button class="btn btn-principal"
+                        onclick="calcularEscasez()">
+
+                        Calcular
+
+                    </button>
+
+                    <button class="btn btn-outline-secondary"
+                        onclick="limpiarEscasez()">
+
+                        Limpiar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ==================== -->
+        <!-- ESCENARIO F -->
+        <!-- ==================== -->
+
+        <div class="tab-pane fade"
+            id="poder">
+
+            <div class="sim-card">
+
+                <h3>
+                    💰 Simulador de Poder Adquisitivo
+                </h3>
+
+                <p>
+
+                    Evalúe cómo el incremento de gastos reduce
+                    la capacidad económica de una familia.
+
+                </p>
+
+                <div class="row g-3">
+
+                    <div class="col-md-4">
+
+                        <label class="form-label">
+                            Ingreso Mensual (Bs)
+                        </label>
+
+                        <input type="number"
+                            id="ingresoMensual"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <label class="form-label">
+                            Gasto Antes de la Crisis (Bs)
+                        </label>
+
+                        <input type="number"
+                            id="gastoAnterior"
+                            class="form-control">
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <label class="form-label">
+                            Gasto Actual (Bs)
+                        </label>
+
+                        <input type="number"
+                            id="gastoActual"
+                            class="form-control">
+
+                    </div>
+
+                </div>
+
+                <div class="mt-4">
+
+                    <button class="btn btn-principal"
+                        onclick="calcularPoderAdquisitivo()">
+
+                        Calcular
+
+                    </button>
+
+                    <button class="btn btn-outline-secondary"
+                        onclick="limpiarPoder()">
+
+                        Limpiar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</main>
+<!-- ========================= -->
+<!-- RESULTADOS -->
+<!-- ========================= -->
+
+<section id="resultados" class="section-spacing">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+                Resultados
+            </span>
+
+            <h2>
+                Panel de Análisis
+            </h2>
+
+            <p>
+                Los resultados de las simulaciones aparecerán aquí junto
+                con indicadores visuales de riesgo.
+            </p>
+
+        </div>
+
+        <div class="resultado-card" id="resultadoGlobal">
+
+            <div class="estado-header">
+
+                <span id="estadoIcono">
+                    📊
+                </span>
+
+                <h3 id="estadoTitulo">
+                    Esperando Simulación
+                </h3>
+
+            </div>
+
+            <div id="resultadoTexto">
+
+                Seleccione un simulador, ingrese los datos y presione
+                calcular para visualizar el análisis.
+
+            </div>
+
+            <hr>
+
+            <div class="mt-4">
+
+                <label class="fw-semibold mb-2">
+                    Nivel de Riesgo
+                </label>
+
+                <div class="progress progress-custom">
+
+                    <div class="progress-bar"
+                        id="barraRiesgo"
+                        role="progressbar"
+                        style="width:0%;">
+
+                        0%
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CASOS DE ESTUDIO -->
+<!-- ========================= -->
+
+<section id="casos" class="section-spacing">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+                Casos de Estudio
+            </span>
+
+            <h2>
+                Escenarios Predefinidos
+            </h2>
+
+            <p>
+                Utilice estos casos para probar rápidamente cada simulador.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- CASO 1 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="case-card">
+
+                    <div class="case-icon">
+                        ⛽
+                    </div>
+
+                    <h4>
+                        Caso 1
+                    </h4>
+
+                    <p>
+                        Reserva de carburantes con consumo elevado.
+                    </p>
+
+                    <button
+                        class="btn btn-principal w-100"
+                        onclick="cargarCaso1()">
+
+                        Cargar Caso
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- CASO 2 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="case-card">
+
+                    <div class="case-icon">
+                        🛒
+                    </div>
+
+                    <h4>
+                        Caso 2
+                    </h4>
+
+                    <p>
+                        Incremento significativo en alimentos.
+                    </p>
+
+                    <button
+                        class="btn btn-principal w-100"
+                        onclick="cargarCaso2()">
+
+                        Cargar Caso
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- CASO 3 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="case-card">
+
+                    <div class="case-icon">
+                        🚌
+                    </div>
+
+                    <h4>
+                        Caso 3
+                    </h4>
+
+                    <p>
+                        Transporte afectado por desvíos.
+                    </p>
+
+                    <button
+                        class="btn btn-principal w-100"
+                        onclick="cargarCaso3()">
+
+                        Cargar Caso
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- CASO 4 -->
+
+            <div class="col-md-6 col-lg-6">
+
+                <div class="case-card">
+
+                    <div class="case-icon">
+                        📦
+                    </div>
+
+                    <h4>
+                        Caso 4
+                    </h4>
+
+                    <p>
+                        Rumor de escasez y aumento de demanda.
+                    </p>
+
+                    <button
+                        class="btn btn-principal w-100"
+                        onclick="cargarCaso4()">
+
+                        Cargar Caso
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- CASO 5 -->
+
+            <div class="col-md-6 col-lg-6">
+
+                <div class="case-card">
+
+                    <div class="case-icon">
+                        💰
+                    </div>
+
+                    <h4>
+                        Caso 5
+                    </h4>
+
+                    <p>
+                        Disminución del poder adquisitivo familiar.
+                    </p>
+
+                    <button
+                        class="btn btn-principal w-100"
+                        onclick="cargarCaso5()">
+
+                        Cargar Caso
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CONCLUSIONES -->
+<!-- ========================= -->
+
+<section id="conclusiones" class="section-spacing">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+                Conclusiones
+            </span>
+
+            <h2>
+                Reflexiones del Análisis
+            </h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="conclusion-card">
+
+                    <i class="bi bi-lightbulb-fill"></i>
+
+                    <h4>
+                        Aprendizaje
+                    </h4>
+
+                    <p>
+                        Las simulaciones permiten comprender cómo
+                        pequeñas variaciones pueden generar impactos
+                        significativos en la economía.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="conclusion-card">
+
+                    <i class="bi bi-graph-up-arrow"></i>
+
+                    <h4>
+                        Impacto Económico
+                    </h4>
+
+                    <p>
+                        El abastecimiento, transporte y precios
+                        afectan directamente a las familias.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="conclusion-card">
+
+                    <i class="bi bi-patch-check-fill"></i>
+
+                    <h4>
+                        Utilidad
+                    </h4>
+
+                    <p>
+                        El simulador facilita la visualización de
+                        escenarios económicos reales.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CREDITOS -->
+<!-- ========================= -->
+
+<section id="creditos" class="section-spacing">
+
+    <div class="container">
+
+        <div class="creditos-card">
+
+            <h2>
+                Proyecto Final
+            </h2>
+
+            <h3>
+                Simulador Integral de Crisis Económica
+            </h3>
+
+            <div class="creditos-info">
+
+                <p>
+                    <strong>Estudiante:</strong>
+                    Milenka Choquechambi
+                </p>
+
+                <p>
+                    <strong>Materia:</strong>
+                    Programación Web I
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 · Simulador Integral de Crisis Económica
+        </p>
+
+        <p>
+            Milenka Choquechambi · Programación Web I
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- Bootstrap -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
